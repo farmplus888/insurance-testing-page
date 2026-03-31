@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html lang="zh-Hans"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wira Heritage - 医疗保险计划</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-tint": "#2a657e",
+              "error": "#ba1a1a",
+              "background": "#f9f9fa",
+              "primary-fixed-dim": "#96ceeb",
+              "on-surface": "#1a1c1d",
+              "on-secondary": "#ffffff",
+              "on-primary-fixed": "#001f2b",
+              "primary": "#003345",
+              "surface-dim": "#d9dadb",
+              "on-background": "#1a1c1d",
+              "inverse-on-surface": "#f0f1f1",
+              "surface-container-low": "#f3f3f4",
+              "surface-container-high": "#e8e8e9",
+              "outline": "#71787d",
+              "on-surface-variant": "#40484c",
+              "on-secondary-container": "#006d79",
+              "error-container": "#ffdad6",
+              "tertiary-container": "#6c3800",
+              "tertiary-fixed": "#ffdcc3",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary": "#ffffff",
+              "surface-container": "#edeeef",
+              "on-primary": "#ffffff",
+              "outline-variant": "#c0c7cd",
+              "secondary-fixed-dim": "#7ad4e2",
+              "on-error-container": "#93000a",
+              "secondary-fixed": "#97f0ff",
+              "on-secondary-fixed-variant": "#004f57",
+              "tertiary-fixed-dim": "#ffb77d",
+              "on-tertiary-fixed-variant": "#6e3900",
+              "tertiary": "#4b2500",
+              "on-primary-fixed-variant": "#044d65",
+              "surface-container-highest": "#e2e2e3",
+              "primary-fixed": "#bfe8ff",
+              "inverse-primary": "#96ceeb",
+              "secondary-container": "#94edfc",
+              "secondary": "#006874",
+              "on-tertiary-fixed": "#2f1500",
+              "primary-container": "#004b63",
+              "surface": "#f9f9fa",
+              "on-primary-container": "#83bad6",
+              "on-error": "#ffffff",
+              "inverse-surface": "#2f3132",
+              "surface-bright": "#f9f9fa",
+              "on-secondary-fixed": "#001f24",
+              "on-tertiary-container": "#ff9b3e",
+              "surface-variant": "#e2e2e3"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-effect {
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #f9f9fa;
+        color: #1a1c1d;
+      }
+      h1, h2, h3 {
+        font-family: 'Manrope', sans-serif;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl flex justify-between items-center px-6 py-4 w-full shadow-[0_40px_60px_-15px_rgba(0,0,0,0.05)]">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-cyan-900" data-icon="menu">menu</span>
+<span class="text-xl font-bold tracking-tighter text-cyan-900">Wira Heritage</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container-high overflow-hidden border-2 border-primary-fixed">
+<img class="w-full h-full object-cover" data-alt="close-up portrait of a professional Malaysian man in business attire looking confident against a clean soft grey background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1ApoDtBZn2pZuL3fXVjHaMiPjy92Hx-V19BdkuAycuJlI14vMoexcudYNoIgdftwSYJvzTdUpAaugh34Kb--F0JY_e5HJRS5EfpukQXnbZlTFHoXp5l8c4-vV73qn_bRzX6cmBPM1FT_wD3cky8Giyz8SwplYaDQQ8UcihxC-0HwgFdkHw7OJhpVnBQMzIrTOh3EeyYWmczzkdv_jJo27Oiq__c8-LmNF7I1kwsQfDi6LLmbxxKac8RcaQFuUkPT6GASnMjRCy-8"/>
+</div>
+</header>
+<main class="pt-20 pb-24">
+<!-- Hero Section -->
+<section class="px-6 pt-8 pb-12 flex flex-col items-center text-center">
+<div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden mb-8 shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="multi-generational Malaysian family sitting together in a modern sunlit living room, smiling warmly at the camera with soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9lwjE6AyC6rkoKZRxhAvR1v2xC3g_g-HhqmTQ7aQlstNi-NsH69K5yjnNfZRdAh-8QWMnIC4kRbmkzZBomGvtI06LCC-ISEzv6mYRh8hUzUluYNxhHYdICIDL4P2Y51t4cVBaACAz6rTVsPM234KvQ8frh1GdDxG9nGtXd-TyuKocVYoMZovYFZeCpMMqFmfG81vuJBAbEwWdVCMm5wPbrOEI-uQLoxTTiV2PvpzF5guKUA6-65dzZjf9DTUX1MY9NBfPJqGdNx0"/>
+<div class="absolute inset-0 bg-primary/10"></div>
+</div>
+<h1 class="text-3xl font-extrabold text-primary leading-tight tracking-tight mb-4">
+                给家人最硬核的守护：<br/>
+<span class="text-secondary">每日 RM5</span>，换取高达 <span class="text-secondary">RM1.5M</span> 的全家安心。
+            </h1>
+<p class="text-on-surface-variant mb-8 px-4">超越传统保险的关怀，为马来西亚家庭量身打造的遗产级保障方案。</p>
+<button class="w-full py-4 px-8 bg-tertiary-fixed text-on-tertiary-container font-bold rounded-full shadow-lg active:scale-95 transition-transform flex items-center justify-center gap-2">
+<span>免费获取个人专属报价</span>
+<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</section>
+<!-- Pain Points (Layered surfaces, no borders) -->
+<section class="bg-surface-container-low py-16 px-6">
+<h2 class="text-2xl font-bold text-primary mb-8 text-center">为什么现在需要保障？</h2>
+<div class="space-y-4">
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm">
+<div class="w-12 h-12 bg-error-container rounded-lg flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-error" data-icon="trending_up">trending_up</span>
+</div>
+<h3 class="text-lg font-bold mb-2">医疗费通胀</h3>
+<p class="text-on-surface-variant text-sm">每年双位数增长的医疗开销，正在悄悄侵蚀您的家庭积蓄。</p>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm">
+<div class="w-12 h-12 bg-secondary-container rounded-lg flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-secondary" data-icon="health_and_safety">health_and_safety</span>
+</div>
+<h3 class="text-lg font-bold mb-2">体检门槛</h3>
+<p class="text-on-surface-variant text-sm">无需繁琐体检，针对性简化投保流程，让守护不再因为程序而延迟。</p>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm">
+<div class="w-12 h-12 bg-tertiary-fixed rounded-lg flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-on-tertiary-fixed-variant" data-icon="payments">payments</span>
+</div>
+<h3 class="text-lg font-bold mb-2">负担沉重</h3>
+<p class="text-on-surface-variant text-sm">面对突如其来的巨额账单，我们为您垫付，确保治疗不受资金困扰。</p>
+</div>
+</div>
+</section>
+<!-- Solution Section (Asymmetric Editorial Layout) -->
+<section class="py-16 px-6 overflow-hidden">
+<div class="mb-12">
+<span class="text-secondary font-bold tracking-widest uppercase text-xs">Premium Solution</span>
+<h2 class="text-3xl font-black text-primary mt-2">卓越计划，守护非凡</h2>
+</div>
+<div class="flex flex-col gap-8">
+<!-- Card 1 -->
+<div class="relative w-full bg-primary-container rounded-3xl p-8 text-white overflow-hidden">
+<div class="relative z-10">
+<span class="text-on-primary-container font-semibold">年度保障总额</span>
+<div class="text-4xl font-black mt-2 mb-4">RM 1,500,000</div>
+<p class="text-white/80 text-sm mb-6">无分项限制，全面覆盖住院、手术及重疾治疗费用。</p>
+<span class="material-symbols-outlined text-secondary-fixed text-5xl" data-icon="verified_user">verified_user</span>
+</div>
+<!-- Abstract texture background -->
+<div class="absolute top-0 right-0 w-32 h-32 bg-secondary/20 rounded-full blur-3xl -mr-16 -mt-16"></div>
+</div>
+<!-- Card 2 -->
+<div class="relative w-full bg-secondary text-white rounded-3xl p-8 overflow-hidden">
+<div class="relative z-10">
+<span class="text-secondary-fixed font-semibold">每日保费低至</span>
+<div class="text-5xl font-black mt-2 mb-4">RM 5.00</div>
+<p class="text-white/80 text-sm">少喝一杯奶茶，换取全家人的医疗安全网。</p>
+</div>
+<div class="absolute bottom-0 right-0 p-4 opacity-20">
+<span class="material-symbols-outlined text-9xl" data-icon="savings">savings</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Social Proof (Editorial Case Study) -->
+<section class="bg-surface py-16 px-6">
+<div class="bg-surface-container-low rounded-[2rem] p-8 relative">
+<span class="material-symbols-outlined text-secondary text-5xl absolute -top-6 left-8" data-icon="format_quote" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<div class="pt-6">
+<p class="text-lg italic text-primary leading-relaxed mb-6">
+                        "去年我父亲因急病住院，账单高达RM80,000。幸好有Wira Heritage，出院时我一分钱都没掏，这种安心是任何金钱买不到的。"
+                    </p>
+<div class="flex items-center gap-4">
+<div class="w-14 h-14 rounded-full overflow-hidden border-2 border-white shadow-md">
+<img class="w-full h-full object-cover" data-alt="headshot of a middle-aged Asian father smiling with soft natural window light, looking warm and approachable" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhbUa1Jq3_CVN3rG8vS-vzDlL4lX6_kJixDgECTNElMZ1aWSsxvRGN6mpXc-kL1XkU8SNrqBiEwMw39_JOW3MIVcUfwXMBIWVvbWQ8CcGPIidaqNQL55ceCwYUZM-ktwcv7k7E3eIDC78XpyruWZ6oiVrU0PiIsqJeabGSj-zdIHJt6oHs2UM8fuqBtJx-AfTr7qiGr_A42fh_VRdVwn9eQ5oo01MbU0PdErG7MOqfnaJIAq4LqHkbfefuKW1pnnWM7MygMJ-pmwA"/>
+</div>
+<div>
+<div class="font-bold text-primary">Mr. Lim</div>
+<div class="text-xs text-on-surface-variant">雪隆区，自雇人士</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust Icon Grid -->
+<section class="py-16 px-6">
+<h2 class="text-xl font-bold text-center mb-10">我们值得信赖的原因</h2>
+<div class="grid grid-cols-2 gap-x-4 gap-y-8">
+<div class="text-center">
+<div class="mx-auto w-12 h-12 bg-surface-container-high rounded-full flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-primary" data-icon="support_agent">support_agent</span>
+</div>
+<div class="font-bold text-sm">24/7 专属客服</div>
+</div>
+<div class="text-center">
+<div class="mx-auto w-12 h-12 bg-surface-container-high rounded-full flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-primary" data-icon="account_balance_wallet">account_balance_wallet</span>
+</div>
+<div class="font-bold text-sm">无现金入院</div>
+</div>
+<div class="text-center">
+<div class="mx-auto w-12 h-12 bg-surface-container-high rounded-full flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-primary" data-icon="description">description</span>
+</div>
+<div class="font-bold text-sm">透明条款</div>
+</div>
+<div class="text-center">
+<div class="mx-auto w-12 h-12 bg-surface-container-high rounded-full flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-primary" data-icon="local_hospital">local_hospital</span>
+</div>
+<div class="font-bold text-sm">合作医院广泛</div>
+</div>
+</div>
+</section>
+<!-- FAQ Accordion -->
+<section class="bg-surface-container-low py-16 px-6">
+<h2 class="text-2xl font-bold mb-8">常见问题</h2>
+<div class="space-y-3">
+<div class="bg-white rounded-xl p-5 shadow-sm flex justify-between items-center">
+<span class="font-semibold text-sm">投保此计划有年龄限制吗？</span>
+<span class="material-symbols-outlined text-outline" data-icon="expand_more">expand_more</span>
+</div>
+<div class="bg-white rounded-xl p-5 shadow-sm">
+<div class="flex justify-between items-center mb-2">
+<span class="font-semibold text-sm text-secondary">赔付流程需要多久？</span>
+<span class="material-symbols-outlined text-secondary" data-icon="expand_less">expand_less</span>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed">对于无现金入院，核准通常在2小时内完成。个人报销申请则在提交完整资料后的7个工作日内处理完毕。</p>
+</div>
+<div class="bg-white rounded-xl p-5 shadow-sm flex justify-between items-center">
+<span class="font-semibold text-sm">可以在海外看病吗？</span>
+<span class="material-symbols-outlined text-outline" data-icon="expand_more">expand_more</span>
+</div>
+</div>
+</section>
+</main>
+<!-- NavigationDrawer (Suppressed based on logic but structure defined for brand integrity) -->
+<!-- Not visible by default on mobile unless triggered -->
+<!-- Footer -->
+<footer class="bg-cyan-950 text-white w-full rounded-t-[2rem] mt-12 flex flex-col items-center gap-8 px-8 py-12 w-full text-center">
+<div class="text-lg font-bold text-white">Wira Heritage</div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="text-slate-300 text-xs tracking-wide uppercase font-semibold hover:text-white transition-opacity" href="#">Privacy Policy</a>
+<a class="text-slate-300 text-xs tracking-wide uppercase font-semibold hover:text-white transition-opacity" href="#">Terms of Service</a>
+<a class="text-slate-300 text-xs tracking-wide uppercase font-semibold hover:text-white transition-opacity" href="#">Financial Documents</a>
+</div>
+<p class="text-[10px] text-slate-400">© 2024 Wira Heritage Takaful. Securely Malaysian.</p>
+</footer>
+<!-- Fixed Bottom Action Bar (Contextual FAB / Action Bar for Mobile) -->
+<div class="fixed bottom-0 left-0 right-0 p-4 bg-white/90 backdrop-blur-md border-t border-outline-variant/10 z-[100] md:hidden">
+<div class="flex gap-4">
+<button class="flex-1 py-4 px-6 bg-tertiary-fixed text-on-tertiary-container font-black rounded-full shadow-lg flex items-center justify-center gap-2">
+<span>立即报价</span>
+<span class="material-symbols-outlined text-xl" data-icon="calculate">calculate</span>
+</button>
+<button class="w-14 h-14 bg-secondary-container text-on-secondary-container rounded-full flex items-center justify-center shadow-lg">
+<span class="material-symbols-outlined" data-icon="chat" style="font-variation-settings: 'FILL' 1;">chat</span>
+</button>
+</div>
+</div>
+</body></html>
